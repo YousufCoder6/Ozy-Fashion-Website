@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 15px 40px;
+    border-bottom: 3px solid #4a0000;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+
+.top-line {
+    width: 100%;
+    height: 3px;
+    background-color: #e50914;
+    margin-bottom: 4px;
+}
+
+.logo-text .white-text {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.red-line {
+    width: 25px;
+    height: 3px;
+    background-color: #e50914;
+}
+
+.restaurant-text {
+    color: #e50914;
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-franchise {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-franchise:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-order {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 6px 6px 6px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-circle {
+    background-color: #ffffff;
+    color: #e50914;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover no-repeat;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner-box {
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid #555;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.banner-box h2 {
+    color: #a8f9a8;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.price-tag {
+    background: #e50914;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.price-tag strong {
+    font-size: 36px;
+    margin: 0 5px;
+}
+
+.reservation .res-title {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.reservation .res-numbers {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* BRANDS SECTION */
+.brands-section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section-main-title {
+    font-size: 36px;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 50px;
+}
+
+.section-main-title span {
+    font-size: 28px;
+    color: #aaa;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand-card {
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 30px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.brand-logo-box {
+    background: #fff;
+    color: #000;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.brand-logo-box.red-theme {
+    border-top: 4px solid #e50914;
+}
+
+.brand-logo-box h3 {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.brand-sub {
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Times New Roman', serif;
+}
+
+.brand-btn {
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.brand-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #0b0b0b;
+    border-top: 2px solid #222;
+    padding: 60px 40px 20px 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #222;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a, .footer-links-inline a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer-desc {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.footer-links-inline {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    background: #e50914;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.app-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-badge {
+    background: #222;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #666;
+    font-size: 13px;
+}
